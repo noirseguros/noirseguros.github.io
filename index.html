@@ -594,15 +594,13 @@
             </div>
         </div>
     </section>
-    
-
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section bg-primary text-white" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contato</h2>
+            <h2 class="page-section-heading text-center text-uppercase mb-0">Contato</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom">
+            <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
@@ -613,7 +611,7 @@
                     <form name="sentMessage" novalidate="novalidate" action="https://formspree.io/xbjzvyvk" method="POST">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Nome</label>
+                                <label class="text-white">Nome</label>
                                 <input class="form-control" id="name" type="text" name="name" placeholder="Nome" required="required" data-validation-required-message="Informe seu nome." />
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -641,7 +639,11 @@
                         </div>
                         <br />
                         <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-xl" type="submit">Enviar</button></div>
+                        <div class="form-group">
+                            <button class="btn btn-secondary btn-xl" type="submit">
+                                Enviar <i class="fa fa-paper-plane"></i> 
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
