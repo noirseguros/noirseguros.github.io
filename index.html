@@ -183,7 +183,7 @@
         </div>
     </section>
     <!-- Produtos Section-->    
-    <section class="page-section bg-primary text-white mb-0 portfolio" id="produtos">
+    <section class="page-section bg-primary mb-0 portfolio" id="produtos">
         <div class="container">
             <h2 class="page-section-heading text-center text-uppercase text-white">Seguros</h2>
             <div class="divider-custom divider-light">
@@ -192,154 +192,299 @@
                 <div class="divider-custom-line"></div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 col-offset-1">
+                <!-- Automóvel -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white col-offset-1">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguroAutomovel">                        
                         <i class="fas fa-car-crash fa-5x prod-icon"></i><p/>AUTOMÓVEL
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="portfolio-modal modal fade" id="seguroAutomovel" tabindex="-1" role="dialog" aria-labelledby="seguroAutomovelLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroAutomovelLabel">Seguro Automóvel</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-car-crash"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <p class="mb-5">
+                                                É necessário para o seu conforto e segurança. Garantindo a manutenção e a reposição do seu veículo em casos de sinistros, além de ressarcir terceiros envolvidos. Assitência 24h, guincho, entre outros.
+                                            </p>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="#contact>
+                                                <i class="fas fa-check mr-2"></i> Faça sua cotação
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Incapacidade temporária -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-business-time fa-5x prod-icon"></i><p/>INCAPACIDADE TEMPORÁRIA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Residencial -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center text-uppercase" data-toggle="modal" data-target="#seguroResidencial">                        
-                        <i class="fas fa-house-damage fa-5x prod-icon"></i>
-                        <p/>RESIDENCIAL
+                        <i class="fas fa-house-damage fa-5x prod-icon"></i><p/>RESIDENCIAL
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="portfolio-modal modal fade" id="seguroResidencial" tabindex="-1" role="dialog" aria-labelledby="seguroResidencialLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroResidencialLabel">Seguro Residencial</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-house-damage"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <p class="mb-5">
+                                                Proteja o seu patrimônio, sua casa e sua família em caso de roubo, furto, incêndio, queda de raio, explosão, danos elétricos, arrombamentos, vidros, dentre outros. Além de assitência 24h, chaveiros, eletricista, entre outros.
+                                            </p>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="#contact>
+                                                <i class="fas fa-check mr-2"></i> Faça sua cotação
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vida -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#produtoResidencial">                        
                         <i class="fas fa-heartbeat fa-5x prod-icon"></i><p/>VIDA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Invalidez permanente -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-wheelchair fa-5x prod-icon"></i><p/>INVALIDEZ PERMANENTE
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 col-offset-1">
+                <!-- Comércio -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white col-offset-1">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-store-alt-slash fa-5x prod-icon"></i><p/>COMÉRCIO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Responsabilidade civil -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-balance-scale fa-5x prod-icon"></i>
                         <p/>RESPONSABILIDADE CÍVIL
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Moto -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">             
                         <i class="fas fa-motorcycle fa-5x prod-icon"></i><p/>MOTO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Saúde -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-ambulance fa-5x prod-icon"></i><p/>SAÚDE
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
-                    <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">   
+                <!-- Empresarial -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
+                    <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguroEmpresarial">   
                         <i class="fas fa-industry fa-5x prod-icon"></i><p/>EMPRESARIAL                     
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="portfolio-modal modal fade" id="seguroEmpresarial" tabindex="-1" role="dialog" aria-labelledby="seguroEmpresarialLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroEmpresarialLabel">Seguro Empresarial</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-industry"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <p class="mb-5">
+                                                Quando você tem uma empresa, deve se preocupar somente com o crescimento dela. Para os imprevistos, conte com as coberturas contra incêndio, raio, explosão, roubo, entre outras proteções para seu patrimônio.
+                                            </p>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="#contact>
+                                                <i class="fas fa-check mr-2"></i> Faça sua cotação
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Viagem -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-suitcase-rolling fa-5x prod-icon"></i><p/>VIAGEM
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Odontológico -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-tooth fa-5x prod-icon"></i><p/>ODONTOLÓGICO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Eventos -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-icons fa-5x prod-icon"></i><p/>EVENTOS
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Eletrônicos -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-laptop fa-5x prod-icon"></i><p/>ELETRÔNICOS
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Consórcio -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-handshake fa-5x prod-icon"></i><p/>CONSÓRCIO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Condomínio -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-city fa-5x prod-icon"></i><p/>CONDOMÍNIO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Frota -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-shipping-fast fa-5x prod-icon"></i><p/>FROTA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Bicicleta -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#produtoResidencial">                        
                         <i class="fas fa-bicycle fa-5x prod-icon"></i><p/>BICICLETA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Náutico -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-anchor fa-5x prod-icon"></i><p/>NÁUTICO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Aeronáutico -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-plane-departure fa-5x prod-icon"></i><p/>AERONÁUTICO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Transporte -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-truck-moving fa-5x prod-icon"></i><p/>TRANSPORTE
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Estágio -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-user-graduate fa-5x prod-icon"></i><p/>ESTÁGIO
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- Animais -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-horse-head fa-5x prod-icon"></i><p/>ANIMAIS
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <!-- PET -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-paw fa-5x prod-icon"></i><p/>PET
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
-                    <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
+                <!-- Painel solar -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
+                    <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguroPainelSolar">                        
                         <i class="fas fa-solar-panel fa-5x prod-icon"></i><p/>PAINEL SOLAR
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="portfolio-modal modal fade" id="seguroPainelSolar" tabindex="-1" role="dialog" aria-labelledby="seguroPainelSolarLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroPainelSolarLabel">Seguro Painel Solar</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-solar-panel"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <p class="mb-5">
+                                                Garante proteção completa para o seu sistema solar: painéis ou placas soláres fotovoltáicos e seus periféricos (baterias, controladores de carga e inversores).
+                                            </p>
+                                            <a class="btn btn-primary" data-dismiss="modal" href="#contact>
+                                                <i class="fas fa-check mr-2"></i> Faça sua cotação
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrícola -->
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-seedling fa-5x prod-icon"></i><p/>AGRÍCOLA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-house-user fa-5x prod-icon"></i><p/>FIANÇA LOCATÍCIA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-laptop-code fa-5x prod-icon"></i><p/>RISCOS DIGITAIS
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-file-signature fa-5x prod-icon"></i><p/>GARANTIA
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-2 text-white">
                     <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#seguro">                        
                         <i class="fas fa-tractor fa-5x prod-icon"></i><p/>MÁQUINAS E EQUIPAMENTOS
                     </div>
@@ -444,72 +589,6 @@
     <div class="scroll-to-top d-lg-none position-fixed">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
     </div>
-    
-    <!-- Produtos Modals-->
-    <!-- Automóvel -->
-    <div class="portfolio-modal modal fade" id="seguroAutomovel" tabindex="-1" role="dialog" aria-labelledby="seguroAutomovelLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroAutomovelLabel">Seguro Automóvel</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-house-damage"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    É necessário para o seu conforto e segurança. Garantindo a manutenção e a reposição do seu veículo em casos de sinistros, além de ressarcir terceiros envolvidos. Assitência 24h, guincho, entre outros.
-                                </p>
-                                <a class="btn btn-primary" data-dismiss="modal" href="#contact>
-                                    <i class="fas fa-check mr-2"></i> Faça sua cotação
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Residencial -->
-    <div class="portfolio-modal modal fade" id="seguroResidencial" tabindex="-1" role="dialog" aria-labelledby="seguroResidencialLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="seguroResidencialLabel">Seguro Residencial</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-house-damage"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    Proteja o seu patrimônio, sua casa e sua família em caso de roubo, furto, incêndio, queda de raio, explosão, danos elétricos, arrombamentos, vidros, dentre outros. Além de assitência 24h, chaveiros, eletricista, entre outros.
-                                </p>
-                                <a class="btn btn-primary" data-dismiss="modal" href="#contact>
-                                    <i class="fas fa-check mr-2"></i> Faça sua cotação
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
 
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
