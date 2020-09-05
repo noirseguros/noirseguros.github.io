@@ -184,7 +184,7 @@ a {
 }
 
 a:hover {
-    color: #f8f9fa;
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -10415,4 +10415,8 @@ form .row:first-child .floating-label-form-group {
 
 .contact-item {
     padding: 1rem;
+}
+
+.text-color-secondary {
+    color: var(--secondary)
 }
