@@ -4,7 +4,19 @@ $(function () {
     ).jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
-            // additional error messages or events
+            // Fail message
+            $("#success").html("<div class='alert alert-danger'>");
+            $("#success > .alert-danger")
+                .html(
+                    "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;"
+                )
+                .append("</button>");
+            $("#success > .alert-danger").append(
+                $("<strong>").text(
+                    `Necessário um meio de contato: telefone ou email.`
+                )
+            );
+            $("#success > .alert-danger").append("</div>");
         },
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
@@ -21,7 +33,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "/assets/mail/contact_me.php",
+                url: "https://formspree.io/xbjzvyvk",
                 type: "POST",
                 data: {
                     name: name,
@@ -39,11 +51,11 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Obrigada. Entraremos em contato! </strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    //$("#contactForm").trigger("reset");
                 },
                 error: function () {
                     // Fail message
@@ -55,14 +67,12 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
-                            "Sorry " +
-                                firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                            `Desculpe o transtorno, ${firstName}, nosso servidor necessita de manuteção. Por favor, nos enviei um e-mail convencional.`
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    //$("#contactForm").trigger("reset");
                 },
                 complete: function () {
                     setTimeout(function () {
