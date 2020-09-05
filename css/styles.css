@@ -32,7 +32,7 @@
     --primary-transparent: #1a81bc66;
     --secondary: #2c3e50;
     --success: #28a745;
-    --info: #17a2b8;
+    --info: #17a3b8;
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
@@ -184,7 +184,7 @@ a {
 }
 
 a:hover {
-    color: #f8f9fa;
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -515,6 +515,7 @@ mark,
 .img-fluid {
     max-width: 100%;
     height: auto;
+    align-content: center;
 }
 
 .img-thumbnail {
@@ -1979,10 +1980,10 @@ pre code {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
+    color: white;
+    background-color: var(--primary);
     background-clip: padding-box;
-    border: 0.125rem solid #ced4da;
+    border: 0.125rem solid white;
     border-radius: 0.5rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2004,35 +2005,35 @@ pre code {
 }
 
 .form-control:focus {
-    color: #495057;
-    background-color: #fff;
+    color: white;
+    background-color: var(--primary);
     border-color: #6bebd1;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #6c757d;
+    color:white;
     opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-    color: #6c757d;
+    color: white;
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #6c757d;
+    color: white;
     opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-    color: #6c757d;
+    color: white;
     opacity: 1;
 }
 
 .form-control::placeholder {
-    color: #6c757d;
+    color: white;
     opacity: 1;
 }
 
@@ -10158,7 +10159,12 @@ a.text-dark:focus {
 }
 
 .divider-custom .divider-custom-icon {
-    color: #2c3e50 !important;
+    color: var(--secondary) !important;
+    font-size: 2rem;
+}
+
+.divider-custom .divider-custom-icon-primary {
+    color: var(--primary) !important;
     font-size: 2rem;
 }
 
@@ -10308,6 +10314,9 @@ a.text-dark:focus {
     border-radius: 0.5rem;
     overflow: hidden;
 }
+.portfolio .portfolio-item .prod-icon :hover{
+    color: var(--secondary)
+}
 
 .portfolio .portfolio-item .portfolio-item-caption {
     position: absolute;
@@ -10411,4 +10420,12 @@ form .row:first-child .floating-label-form-group {
 
 .contact-item {
     padding: 1rem;
+}
+
+.text-color-secondary {
+    color: var(--secondary)
+}
+
+.text-color-primary {
+    color: var(--primary)
 }
