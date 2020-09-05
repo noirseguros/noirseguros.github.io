@@ -10159,7 +10159,12 @@ a.text-dark:focus {
 }
 
 .divider-custom .divider-custom-icon {
-    color: #2c3e50 !important;
+    color: var(--secondary) !important;
+    font-size: 2rem;
+}
+
+.divider-custom .divider-custom-icon-primary {
+    color: var(--primary) !important;
     font-size: 2rem;
 }
 
@@ -10419,4 +10424,8 @@ form .row:first-child .floating-label-form-group {
 
 .text-color-secondary {
     color: var(--secondary)
+}
+
+.text-color-primary {
+    color: var(--primary)
 }
