@@ -13,21 +13,23 @@
           }
           var email = $("#email").val();
           var phone = $("#phone").val()
+          var successHide = document.getElementById("successHide");
           if(email === '' && phone === ''){ 
             form.classList.add('was-validated');
-              $("#success").html("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>Necessário um meio de contato: telefone ou email.</div>")
-              $("#success").addClass(".alert-danger");
+              $("#success").html("Necessário um meio de contato: telefone ou email.")
+              successHide.style.display = "block";
               event.preventDefault();
               event.stopPropagation();              
           }
           else{
           $("#validate").removeClass("error");
           form.classList.add('was-validated');
-             $("#success").removeClass("error-text");
+             $("#success").removeClass(".alert-danger");
              $("#success").html("");
+             successHide.style.display = "none";
           }
-         
         }, false);
       });
+
     }, false);
   })();
