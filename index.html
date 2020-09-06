@@ -658,35 +658,54 @@
             <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form name="sentMessage" novalidate="novalidate" action="https://formspree.io/xbjzvyvk" method="POST">
+                    <form class='needs-validation' name="sentMessage" novalidate action="https://formspree.io/xbjzvyvk" method="POST">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label class="text-white">Nome</label>
-                                <input class="form-control" id="name" type="text" name="name" placeholder="Nome" required="required" data-validation-required-message="Informe seu nome." />
-                                <p class="help-block text-danger"></p>
+                                <input class="form-control" id="name" type="text" name="name" placeholder="Nome" required="required" />
+                                <div class="invalid-feedback help-block text-danger">
+                                    <div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>Informe o seu nome.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>CPF</label>
+                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="CPF"/>
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Endereço de e-mail</label>
-                                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Endereço de e-mail" required="required" data-validation-required-message="Informe seu e-mail" />
-                                <!-- <p class="help-block text-danger"></p> -->
+                                <input class="form-control" id="email" type="email" name="email" placeholder="Endereço de e-mail" required="required"/>
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Telefone</label>
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Telefone" required="required" data-validation-required-message="Informe seu telefone." />
-                                <!-- <p class="help-block text-danger"></p> -->
+                                <label>Celular</label>
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Celular" required="required" />
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Mensagem</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Informe sua mensagem."></textarea>
-                                <!-- <p class="help-block text-danger"></p> -->
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensagem" required="required"></textarea>
+                                <div class="invalid-feedback help-block text-danger">
+                                    <div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>Informe o seu nome.</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Aceito entrar em contato.
+                              </label>
+                              <div class="invalid-feedback">
+                                <div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>Necessário aceitar entrar em contato.</div>
+                              </div>
+                            </div>
+                          </div>
                         <br />
                         <div id="success"></div>
                         <div class="form-group">
@@ -746,8 +765,9 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="assets/mail/validate.js"></script>
+    <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script> -->
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
