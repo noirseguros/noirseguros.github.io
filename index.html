@@ -658,7 +658,8 @@
             <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form class='needs-validation' name="sentMessage" novalidate action="https://formspree.io/xbjzvyvk" method="POST">
+                    <form class='needs-validation' name="sentMessage" novalidate action='https://formspree.io/xbjzvyvk' method='POST'>
+                        <!-- Nome -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label class="text-white">Nome</label>
@@ -668,24 +669,28 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- CPF -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>CPF</label>
                                 <input class="form-control" id="cpf" type="text" name="cpf" placeholder="CPF"/>
                             </div>
                         </div>
+                        <!-- Email -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Endereço de e-mail</label>
-                                <input class="form-control" id="email" type="email" name="email" placeholder="Endereço de e-mail" required="required"/>
+                                <input class="form-control" id="email" type="email" name="email" placeholder="Endereço de e-mail"/>
                             </div>
                         </div>
+                        <!-- Celular -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Celular</label>
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Celular" required="required" />
+                                <label>Celular com DDD</label>
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Celular com DDD"/>
                             </div>
                         </div>
+                        <!-- Mesagem -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Mensagem</label>
@@ -695,6 +700,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Entrar contato -->
                         <div class="form-group">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -707,14 +713,9 @@
                             </div>
                           </div>
                         <br />
-                        <div id="successHide" style="display: none;">
-                            <div class='alert alert-danger'>
-                                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                                <label id="success"></label>
-                            </div>
-                        </div>
+                        <div id="alert"></div>
                         <div class="form-group">
-                            <button class="btn btn-secondary btn-xl" type="submit">
+                            <button class="btn btn-secondary btn-xl" id='sendMessageButton' type="submit">
                                 Enviar&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-paper-plane"></i> 
                             </button>
                         </div>
