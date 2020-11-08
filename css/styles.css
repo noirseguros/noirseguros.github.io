@@ -10117,9 +10117,32 @@ a.text-dark:focus {
     }
 }
 
+.contact-item-div {
+    display: inline-block;
+}
+
+.banner {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    padding: 0rem;
+}
+
+.banner-item {
+    padding: 1rem;
+}
+
+@media (min-width: 992px) {
+    .banner-item {
+        padding: 1rem 10rem;
+    }    
+}
+
+
 .page-section {
     padding: 6rem 0;
 }
+
 
 .page-section .page-section-heading {
     font-size: 2.25rem;
