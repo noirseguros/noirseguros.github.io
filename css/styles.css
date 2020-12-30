@@ -10457,3 +10457,13 @@ form .row:first-child .floating-label-form-group {
 .text-color-primary {
     color: var(--primary)
 }
+
+#privacy-policy-anchor:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#privacy-policy-anchor {
+    color: #fff;
+    font-weight: bold;
+}
