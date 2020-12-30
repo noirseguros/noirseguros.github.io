@@ -30,6 +30,15 @@
 </head>
 
 <body id="page-top">
+
+
+    <!-- Cookies alert-->
+    <div class="alert fixed-bottom alert-light alert-dismissible fade show" role="alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Ao acessar o site você concorda com o uso de cookies para melhorar a sua experiência de navegação.
+        Para saber mais acesse a nossa <a class="alert-link" href="cookies.html">Política de Cookies.</a>
+    </div>
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
@@ -49,9 +58,13 @@
         </div>
     </nav>
 
+
+
     <!-- Masthead-->
     <header class="masthead text-center text-color-secondary">
+
         <div class="container d-flex align-items-center flex-column">
+       
 
             <div class="banner">
                 <a 
@@ -731,13 +744,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- CPF -->
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>CPF</label>
-                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="CPF" />
-                            </div>
-                        </div>
                         <!-- Email -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -762,17 +768,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Receber informações sobre os produtos -->
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
-                                <label class="form-check-label" for="invalidCheck">
-                                Aceito receber informações sobre os nossos seguros.
-                              </label>
-                            </div>
-                        </div>
                         <br />
-                        <div id="alert"></div>
+                        <div>
+                            <p class="text-sm">
+                                <i class="fas fa-info-circle"></i> Ao fornecer seu dados você aceita 
+                                <a href="privacy.html" id="privacy-policy-anchor">este acordo de privacidade</a>.
+                            </p>
+                        </div>
                         <div class="form-group">
                             <button class="btn btn-secondary btn-xl" type="submit">
                                 Enviar&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-paper-plane"></i> 
@@ -788,16 +790,6 @@
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
-                <!-- Footer Location-->
-                <!--          
-                      <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br /> Clark, MO 65243
-                        </p>
-                    </div>
-                -->
                 <!-- Footer Social Icons-->
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Contato</h4>
